@@ -6,15 +6,15 @@ export const CV: FC = () => (
       "flex flex-col flex-nowrap content-between items-start justify-between space-y-8 pt-5 text-sm md:flex-row md:items-baseline"
     }
   >
-    <div className={"mx-4 h-fit border-gray-950 px-4 md:flex-1 md:border-l"}>
+    <div className={"mx-4 h-fit border-gray-950 px-4 md:w-1/3 md:border-l"}>
       <Estudis />
       <Idiomes />
       <Programari />
     </div>
-    <div className={"mx-4 h-fit border-gray-950 px-4 md:flex-1 md:border-l"}>
+    <div className={"mx-4 h-fit border-gray-950 px-4 md:w-1/3 md:border-l"}>
       <Experiencia />
     </div>
-    <div className={"mx-4 h-fit border-gray-950 px-4 md:flex-1 md:border-l"}>
+    <div className={"mx-4 h-fit border-gray-950 px-4 md:w-1/3 md:border-l"}>
       <DadesInteres />
     </div>
   </article>
