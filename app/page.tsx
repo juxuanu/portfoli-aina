@@ -4,7 +4,7 @@ import { Cobertes } from "./_components/cobertes";
 
 export default function Home() {
   return (
-    <main className={"mb-8 space-y-4"}>
+    <main className={"mb-8 space-y-6"}>
       <Portada />
       <CV />
       <Cobertes />

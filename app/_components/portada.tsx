@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import aina from "../_images/aina.png";
+import aina from "../../images/aina.png";
 
 export const Portada: FC = () => (
   <article className="flex flex-col flex-nowrap md:flex-row">
