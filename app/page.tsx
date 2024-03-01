@@ -3,7 +3,7 @@ import { Portada } from "./_components/portada";
 
 export default function Home() {
   return (
-    <main className={"space-y-4 mb-8"}>
+    <main className={"mb-8 space-y-4"}>
       <Portada />
       <CV />
     </main>

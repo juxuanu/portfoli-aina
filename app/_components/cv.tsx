@@ -3,18 +3,18 @@ import { FC, JSX } from "react";
 export const CV: FC = () => (
   <article
     className={
-      "flex flex-col md:flex-row md:items-baseline flex-nowrap items-start text-sm pt-5 space-y-8"
+      "flex flex-col flex-nowrap content-between items-start justify-between space-y-8 pt-5 text-sm md:flex-row md:items-baseline"
     }
   >
-    <div className={"md:border-l border-gray-950 mx-4 px-4 h-fit"}>
+    <div className={"mx-4 h-fit border-gray-950 px-4 md:flex-1 md:border-l"}>
       <Estudis />
       <Idiomes />
       <Programari />
     </div>
-    <div className={"md:border-l border-gray-950 mx-4 px-4 h-fit"}>
+    <div className={"mx-4 h-fit border-gray-950 px-4 md:flex-1 md:border-l"}>
       <Experiencia />
     </div>
-    <div className={"md:border-l border-gray-950 mx-4 px-4 h-fit"}>
+    <div className={"mx-4 h-fit border-gray-950 px-4 md:flex-1 md:border-l"}>
       <DadesInteres />
     </div>
   </article>
@@ -22,20 +22,20 @@ export const CV: FC = () => (
 
 const Estudis: FC = () => (
   <>
-    <h2 className={"font-bold text-2xl mb-4"}>Estudis</h2>
+    <h2 className={"mb-4 text-2xl font-bold"}>Estudis</h2>
     <ul>
       <li>
         <h3 className={"font-bold"}>Estudis superiors de disseny gràfic</h3>
         <p className={"font-normal"}>
           ESCOLA D’ART I SUPERIOR DE DISSENY DE LES ILLES BALEARS (2016—2020)
         </p>
-        <h4 className={"font-bold pl-4 mt-2"}>Erasmus</h4>
-        <p className={"font-normal pl-4"}>
+        <h4 className={"mt-2 pl-4 font-bold"}>Erasmus</h4>
+        <p className={"pl-4 font-normal"}>
           ÉCOLE SUPÉRIEURE D’ARTS APPLIQUÉS ET TEXTILE (setembre—desembre 2018)
         </p>
       </li>
       <li>
-        <h3 className={"font-bold mt-4"}>
+        <h3 className={"mt-4 font-bold"}>
           Postgrau de Fotografia i Disseny Editorial
         </h3>
         <p className={"font-normal"}>
@@ -48,7 +48,7 @@ const Estudis: FC = () => (
 
 const Idiomes: FC = () => (
   <>
-    <h2 className={"font-bold text-2xl mb-4 mt-5"}>Idiomes</h2>
+    <h2 className={"mb-4 mt-5 text-2xl font-bold"}>Idiomes</h2>
     <ul className={"space-y-2"}>
       <li className={"font-normal"}>
         <span className={"font-bold"}>Català</span>: Nivell C1 (Llengua materna)
@@ -69,7 +69,7 @@ const Idiomes: FC = () => (
 
 const Programari: FC = () => (
   <>
-    <h2 className={"font-bold text-2xl mb-4 mt-5"}>Programari</h2>
+    <h2 className={"mb-4 mt-5 text-2xl font-bold"}>Programari</h2>
     <ul className={"space-y-2 font-semibold"}>
       <li>
         <p>Adobe InDesign</p>
@@ -92,12 +92,12 @@ const Programari: FC = () => (
 
 const Experiencia: FC = () => (
   <>
-    <h2 className={"font-bold text-2xl mb-4"}>Experiència</h2>
+    <h2 className={"mb-4 text-2xl font-bold"}>Experiència</h2>
     <ul className={"space-y-2"}>
       <li>
         <h3 className={"font-bold"}>Penguin Random House Grupo Editorial</h3>
         <p className={"font-normal"}>EMPRESA EDITORIAL</p>
-        <p className={"font-normal pl-4"}>
+        <p className={"pl-4 font-normal"}>
           Pràctiques de postgrau (març — juny 2022, 300h)
           <br />
           Dissenyadora tècnica (setembre 2022 — actualitat)
@@ -106,7 +106,7 @@ const Experiencia: FC = () => (
       <li>
         <h3 className={"font-bold"}>Fantastic Mr. Nilsson</h3>
         <p className={"font-normal"}>AGÈNCIA CREATIVA</p>
-        <p className={"font-normal pl-4"}>
+        <p className={"pl-4 font-normal"}>
           Projecte editorial d’un catàleg de roba infantil tardor/hivern per My
           Little Cozmo (novembre — desembre 2021, 40 dies)
           <br />
@@ -141,7 +141,7 @@ const Experiencia: FC = () => (
 
 const DadesInteres: FC = () => (
   <>
-    <h2 className={"font-bold text-2xl mb-4"}>Dades d&apos;interès</h2>
+    <h2 className={"mb-4 text-2xl font-bold"}>Dades d&apos;interès</h2>
     <ul className={"space-y-2 font-semibold"}>
       <li>
         <p>Capacitat d’organització davant grans volums de feina</p>
