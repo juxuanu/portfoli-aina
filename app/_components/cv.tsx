@@ -9,21 +9,29 @@ export const CV: FC = () => (
     <div className={"mx-4 h-fit border-gray-950 px-4 md:w-1/3 md:border-l"}>
       <Estudis />
       <Idiomes />
-      <Programari />
     </div>
     <div className={"mx-4 h-fit border-gray-950 px-4 md:w-1/3 md:border-l"}>
       <Experiencia />
     </div>
     <div className={"mx-4 h-fit border-gray-950 px-4 md:w-1/3 md:border-l"}>
-      <DadesInteres />
+      <Aptituds />
+      <Programari />
     </div>
   </article>
 );
 
 const Estudis: FC = () => (
   <>
-    <h2 className={"mb-4 text-2xl font-bold"}>Estudis</h2>
-    <ul>
+    <h2 className={"mb-4  text-2xl font-bold"}>Estudis</h2>
+    <ul className={"space-y-2"}>
+      <li>
+        <h3 className={"font-bold"}>
+          Postgrau de Fotografia i Disseny Editorial
+        </h3>
+        <p className={"font-normal"}>
+          EINA, CENTRE UNIVERSITARI DE DISSENY I ART DE BARCELONA (2021—2022)
+        </p>
+      </li>
       <li>
         <h3 className={"font-bold"}>Estudis superiors de disseny gràfic</h3>
         <p className={"font-normal"}>
@@ -32,14 +40,6 @@ const Estudis: FC = () => (
         <h4 className={"mt-2 pl-4 font-bold"}>Erasmus</h4>
         <p className={"pl-4 font-normal"}>
           ÉCOLE SUPÉRIEURE D’ARTS APPLIQUÉS ET TEXTILE (setembre—desembre 2018)
-        </p>
-      </li>
-      <li>
-        <h3 className={"mt-4 font-bold"}>
-          Postgrau de Fotografia i Disseny Editorial
-        </h3>
-        <p className={"font-normal"}>
-          EINA, CENTRE UNIVERSITARI DE DISSENY I ART DE BARCELONA (2021—2022)
         </p>
       </li>
     </ul>
@@ -139,9 +139,9 @@ const Experiencia: FC = () => (
   </>
 );
 
-const DadesInteres: FC = () => (
+const Aptituds: FC = () => (
   <>
-    <h2 className={"mb-4 text-2xl font-bold"}>Dades d&apos;interès</h2>
+    <h2 className={"mb-4 text-2xl font-bold"}>Aptituds</h2>
     <ul className={"space-y-2 font-semibold"}>
       <li>
         <p>Capacitat d’organització davant grans volums de feina</p>
