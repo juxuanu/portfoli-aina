@@ -1,6 +1,6 @@
 import { CV } from "./_components/cv";
 import { Portada } from "./_components/portada";
-import { Cobertes } from "./_components/cobertes";
+import Cobertes from "./_components/cobertes/component";
 
 export default function Home() {
   return (
