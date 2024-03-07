@@ -30,6 +30,7 @@ export const Portada: FC = () => (
         src={aina}
         alt={"Aina Delgado Solivellas"}
         placeholder={"blur"}
+        priority={true}
         className={"h-auto w-full"}
       />
     </div>
